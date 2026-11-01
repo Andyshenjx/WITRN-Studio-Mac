@@ -1,6 +1,6 @@
 <p align="center"><img src="icon.png" width="120" alt="K2 Studio 图标"></p>
 
-# 维简 K2 Studio
+# 维简 Studio
 
 **WITRN K2 USB 功率表的原生 macOS 上位机**
 
