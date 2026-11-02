@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://andyshenjx.github.io/WITRN-Studio-Mac/sitemap.xml
