@@ -72,13 +72,6 @@
 - PD 解码保留原始报文；CRC 未校验，缺少上下文时不猜测 RDO 物理量。
 - 图表预览有抽稀和缓存上限，精确区间统计读取完整记录文件。
 
-## 发布文件与源码
-
-本仓库用于发布应用和使用说明。开发工程以单独的压缩包随 Release 提供，不展开在仓库文件列表中。
-
-[Releases 下载页](https://github.com/Andyshenjx/K2-Studio/releases) 中：
-
-
 ## 致谢与开源协议
 
 协议实现参考 JohnScotttt / JohnScott 的 [WITRN_HID_API](https://github.com/JohnScotttt/WITRN_HID_API) 与 [USB_PD_Parser_API_Py](https://github.com/JohnScotttt/USB_PD_Parser_API_Py)；
