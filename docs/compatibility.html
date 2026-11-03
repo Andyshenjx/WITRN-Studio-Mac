@@ -1,63 +1,140 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <!-- Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDCEBKFG3F"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-EDCEBKFG3F');
-  </script>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#faf9f6">
-  <title>找到你的 WITRN。 · 维简 Studio</title>
-  <meta name="description" content="19 款测量型号，两代协议。设备功能按型号分别开放。">
+  <meta name="theme-color" content="#f7f8f3">
+  <title>设备兼容性 · 维简 Studio</title>
+  <meta name="description" content="选择 WITRN 型号，查看测量、CSV、PD 抓包、线阻、表盘与维护的适配范围、固件要求和验证状态。当前源码包含 19 款型号路径。">
   <link rel="canonical" href="https://andyshenjx.github.io/WITRN-Studio-Mac/compatibility.html">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_CN">
   <meta property="og:site_name" content="维简 Studio">
-  <meta property="og:title" content="找到你的 WITRN。 · 维简 Studio">
-  <meta property="og:description" content="19 款测量型号，两代协议。设备功能按型号分别开放。">
+  <meta property="og:title" content="设备兼容性 · 维简 Studio">
+  <meta property="og:description" content="选择 WITRN 型号，查看测量、CSV、PD 抓包、线阻、表盘与维护的适配范围、固件要求和验证状态。当前源码包含 19 款型号路径。">
   <meta property="og:url" content="https://andyshenjx.github.io/WITRN-Studio-Mac/compatibility.html">
   <meta property="og:image" content="https://andyshenjx.github.io/WITRN-Studio-Mac/assets/app-overview.png">
   <meta property="og:image:alt" content="维简 Studio 的电压、电流与功率曲线界面">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" href="assets/app-icon.png">
   <link rel="apple-touch-icon" href="assets/app-icon.png">
-  <link rel="stylesheet" href="styles.css">
-  <script src="site.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=3.3.0-layout-20261103">
+  <script src="site.js?v=3.3.0-layout-20261103" defer></script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDCEBKFG3F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EDCEBKFG3F');
+  </script>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "维简 Studio",
-    "alternateName": "WITRN Studio Mac",
-    "operatingSystem": "macOS 14+",
-    "applicationCategory": "UtilitiesApplication",
-    "url": "https://andyshenjx.github.io/WITRN-Studio-Mac/compatibility.html",
-    "downloadUrl": "https://github.com/Andyshenjx/WITRN-Studio-Mac/releases",
-    "description": "WITRN USB 功率表的第三方原生 macOS 上位机，提供测量曲线、CSV 记录与分析、K2 USB PD 抓包及个性化编辑。",
-    "author": {"@type": "Person", "name": "Andyshenjx", "url": "https://github.com/Andyshenjx"},
-    "license": "https://www.gnu.org/licenses/lgpl-3.0.html"
-  }
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "维简 Studio",
+  "alternateName": "WITRN Studio Mac",
+  "operatingSystem": "macOS 14+",
+  "applicationCategory": "UtilitiesApplication",
+  "url": "https://andyshenjx.github.io/WITRN-Studio-Mac/",
+  "downloadUrl": "https://github.com/Andyshenjx/WITRN-Studio-Mac/releases",
+  "description": "WITRN USB 功率表的第三方原生 macOS 上位机，提供测量曲线、CSV 记录与分析、K2 USB PD 抓包及个性化编辑。",
+  "author": {
+    "@type": "Person",
+    "name": "Andyshenjx",
+    "url": "https://github.com/Andyshenjx"
+  },
+  "license": "https://www.gnu.org/licenses/lgpl-3.0.html"
+}
   </script>
 </head>
 <body>
+
   <a class="skip-link" href="#main">跳到正文</a>
   <header class="site-header">
     <nav class="nav shell" aria-label="主导航">
-      <a class="brand" href="index.html" aria-label="维简 Studio 首页"><img src="assets/app-icon.png" alt="" width="40" height="40"><span>维简 <strong>Studio</strong></span></a>
-      <div class="nav-links"><a href="features.html">功能全览</a><a href="features.html#personalize">个性化</a><a href="compatibility.html">兼容性</a><a href="guide.html">使用指南</a><a href="index.html#support">支持开发 <span aria-hidden="true">↗</span></a></div>
-      <a class="button button-small" href="index.html#download">下载 Mac 版 <span aria-hidden="true">↓</span></a>
+      <a class="brand" href="index.html" aria-label="维简 Studio 首页"><img src="assets/app-icon.png" alt="" width="36" height="36"><span>维简 <strong>Studio</strong></span></a>
+      <div class="nav-links"><a href="features.html">功能全览</a><a href="compatibility.html" aria-current="page">设备兼容性</a><a href="guide.html">使用指南</a></div>
+      <div class="nav-actions">
+        <a class="button button-small" href="index.html#download">下载 Mac 版 <span aria-hidden="true">↓</span></a>
+        <details class="mobile-menu">
+          <summary aria-label="网站导航"><span class="menu-lines" aria-hidden="true"></span><span class="visually-hidden">网站导航</span></summary>
+          <div class="mobile-menu-panel"><a href="features.html">功能全览</a><a href="compatibility.html" aria-current="page">设备兼容性</a><a href="guide.html">使用指南</a><a href="index.html#support">支持开发</a><a href="https://github.com/Andyshenjx/WITRN-Studio-Mac">GitHub <span aria-hidden="true">↗</span></a></div>
+        </details>
+      </div>
     </nav>
   </header>
+  <main id="main">
+<section class="page-heading shell"><p class="eyebrow">设备兼容性 / 3.3.0</p><h1>先找到型号，<br>再看它能做什么。</h1><p class="page-intro">测量适配与设备维护分别开放。这里列出当前源码中的能力；下载时，请同时核对对应发行版说明。</p><div class="page-meta"><span class="tag">19 款源码适配型号</span><span class="tag">2 代测量协议</span><span class="tag">新增型号仍待实机验证</span></div></section>
+    <div class="compatibility-content shell">
+      <section class="model-finder" data-model-finder hidden aria-labelledby="finder-title">
+        <div><p class="section-kicker">按型号查看</p><h2 id="finder-title">我的功率表能做什么？</h2><label for="device-model">选择设备型号</label><select id="device-model"><option value="">选择你的型号</option></select><p class="finder-hint">U3L Pro 对应 U3LP。未列出的型号，请查看下方的覆盖范围说明。</p></div>
+        <div class="model-result" role="status" aria-live="polite" aria-atomic="true"><h3>选择型号，查看适配范围</h3><dl class="model-capabilities"></dl><p class="model-note">这里展示当前源码中的能力。下载时，还需核对对应发行版说明。</p><a class="text-link model-guide-link" href="guide.html#connect" hidden>查看对应使用步骤 <span aria-hidden="true">↗</span></a></div>
+      </section>
 
-  <main id="main"><section class="page-heading shell"><span class="section-kicker">WITRN STUDIO / 3.3.0</span><h1>找到你的 WITRN。</h1><p>19 款测量型号，两代协议。设备功能按型号分别开放。</p></section><section class="shell section"><div class="table-wrap"><table><caption class="visually-hidden">WITRN 设备能力矩阵</caption><thead><tr><th scope="col">设备型号</th><th scope="col">测量 / CSV</th><th scope="col">PD 抓包</th><th scope="col">个性化写入</th><th scope="col">固件 / E-Marker</th></tr></thead><tbody><tr><th scope="row">K2</th><td>已有测量适配</td><td>支持</td><td>表盘 / 开机图</td><td>K2 固件 / E-Marker</td></tr><tr><th scope="row">C5 / C4 / C4L</th><td>共同协议适配，待验证</td><td>未适配</td><td>表盘背景 / 布局</td><td>未适配</td></tr><tr><th scope="row">U3 / U3L / U3LP</th><td>共同协议适配，待验证</td><td>未适配</td><td>未适配</td><td>未适配</td></tr><tr><th scope="row">A2 / A2L / A2C</th><td>共同协议适配，待验证</td><td>未适配</td><td>未适配</td><td>未适配</td></tr><tr><th scope="row">U2 / U2P / X</th><td>旧款查询适配，待验证</td><td>未适配</td><td>未适配</td><td>未适配</td></tr><tr><th scope="row">C0 / C0s / C1 / C3</th><td>实验性测量适配</td><td>未适配</td><td>未适配</td><td>未适配</td></tr><tr><th scope="row">A0 / A1</th><td>实验性测量适配</td><td>未适配</td><td>未适配</td><td>未适配</td></tr></tbody></table></div><div class="guide-grid"><article><h2>新版共同测量</h2><p>K2、C4/C4L/C5、U3/U3L/U3LP、A2/A2L/A2C。A2 固件需 2.1 起，A2L 需 1.6 起；A2 系列仅一组设备容量。U3L Pro 按 U3LP 识别。</p></article><article><h2>旧款查询测量</h2><p>U2/U2P/X 使用旧款测量查询；C0/C0s/C1/C3、A0/A1 为实验性适配。实时帧不提供设备 Ah/Wh、运行时间及组号，软件积分继续可用。</p></article><article><h2>表盘与维护</h2><p>K2 支持表盘与开机图；C4/C4L/C5 支持表盘背景和参数，固件需 3.0 起。所有设备写入仍需确认 DFU 身份。固件升级、线阻及虚拟 E-Marker 设备操作目前限 K2。</p></article><article><h2>尚未覆盖的型号</h2><p>A2Q 官方不支持电脑联机。CC1、C2、C0Q/C0+、U3SE/MFI、C5X/C5L 未计入已适配型号。发现接口不等于已确认型号或协议。</p></article></div><p class="section-note">以上是当前适配范围，新增型号和维护路径尚待实机验证。下载包的具体能力以该版本说明为准。</p></section><section class="shell section"><figure class="gallery-figure"><button class="image-button" type="button" data-preview="assets/device.png" data-caption="设备信息与诊断" aria-label="放大查看设备信息与诊断"><img src="assets/device.png" alt="设备信息与诊断" width="2774" height="2202" loading="lazy"><span class="image-zoom" aria-hidden="true">↗</span></button><figcaption>设备信息与诊断 · 点击查看完整截图</figcaption></figure></section></main>  <footer class="footer shell"><div class="footer-top"><a class="brand" href="index.html"><img src="assets/app-icon.png" alt="" width="32" height="32"><span>维简 <strong>Studio</strong></span></a><div><a href="https://github.com/Andyshenjx/WITRN-Studio-Mac">GitHub <span aria-hidden="true">↗</span></a><a href="guide.html">使用指南</a><a href="https://github.com/Andyshenjx/WITRN-Studio-Mac/blob/main/LICENSE">开源协议</a><a href="https://github.com/Andyshenjx/WITRN-Studio-Mac/blob/main/THIRD_PARTY_NOTICES.md">第三方声明</a></div></div><p>Made by <a href="https://github.com/Andyshenjx">Andyshenjx</a> <span aria-hidden="true">·</span> 代码采用 LGPL-3.0-or-later，品牌资源不属于该授权范围。</p><p class="legal">独立第三方项目，与 WITRN / 维简官方无关联，未获其授权、认可或背书。相关商标与标识归各自权利人所有。软件按「原样」提供；功能和兼容性以具体版本说明为准。</p></footer>
+      <section class="matrix-section" id="matrix" aria-labelledby="matrix-title">
+        <div class="matrix-heading"><h2 id="matrix-title">完整功能矩阵</h2><p id="matrix-hint">小屏幕可左右滑动，第一列保持可见 <span aria-hidden="true">↔</span></p></div>
+        <div class="table-wrap" role="region" aria-labelledby="matrix-title" aria-describedby="matrix-hint" tabindex="0">
+          <table class="compatibility-table"><caption class="visually-hidden">19 款 WITRN 型号的测量、PD、个性化及维护能力与适配状态</caption>
+            <thead><tr><th scope="col">设备型号</th><th scope="col">测量 / CSV</th><th scope="col">PD / 线阻</th><th scope="col">表盘 / 开机图</th><th scope="col">固件 / E-Marker</th><th scope="col">适配状态</th></tr></thead>
+            <tbody><tr data-family="K2" data-models="K2" data-note="线阻读取要求固件 5.5–5.8。表盘、开机图及维护操作须确认 K2 DFU 身份。" data-guide="k2">
+      <th scope="row">K2</th><td>曲线与 CSV</td><td>PD 抓包 / 线阻</td><td>表盘 / 开机图</td><td>固件 / 虚拟 E-Marker</td><td><span class="status ">已有测量适配；新增维护待验证</span></td>
+    </tr>
+<tr data-family="C4 / C5 系列" data-models="C4,C4L,C5" data-note="表盘要求固件 3.0 起，背景与参数分别写入，并确认 C4 / C5 的 DFU 身份。不提供 K2 维护功能。" data-guide="personalization">
+      <th scope="row">C4 / C4L / C5</th><td>共同协议 · 曲线与 CSV</td><td>未适配</td><td>表盘背景 / 布局</td><td>未适配</td><td><span class="status status-pending">待实机验证</span></td>
+    </tr>
+<tr data-family="U3 系列" data-models="U3,U3L,U3LP" data-note="U3L Pro 按 U3LP 识别。当前仅接入测量与 CSV，不开放设备维护。" data-guide="connect">
+      <th scope="row">U3 / U3L / U3LP</th><td>共同协议 · 曲线与 CSV</td><td>未适配</td><td>未适配</td><td>未适配</td><td><span class="status status-pending">待实机验证</span></td>
+    </tr>
+<tr data-family="A2 系列" data-models="A2,A2L,A2C" data-note="A2 要求固件 2.1 起，A2L 要求 1.6 起；A2 系列仅一组设备容量。" data-guide="connect">
+      <th scope="row">A2 / A2L / A2C</th><td>共同协议 · 曲线与 CSV</td><td>未适配</td><td>未适配</td><td>未适配</td><td><span class="status status-pending">待实机验证</span></td>
+    </tr>
+<tr data-family="U2 / U2P / X" data-models="U2,U2P,X" data-note="实时帧不提供设备 Ah / Wh、运行时间与组号；Mac 端的本次测量积分与 CSV 仍可使用。" data-guide="recording">
+      <th scope="row">U2 / U2P / X</th><td>旧款查询 · 曲线与 CSV</td><td>未适配</td><td>未适配</td><td>未适配</td><td><span class="status status-pending">待实机验证</span></td>
+    </tr>
+<tr data-family="旧款 C 系列" data-models="C0,C0s,C1,C3" data-note="依据共用旧款测量路径接入，具体型号、固件和字段仍需实机确认。设备累计缺失时使用 Mac 积分。" data-guide="troubleshooting">
+      <th scope="row">C0 / C0s / C1 / C3</th><td>旧款查询 · 曲线与 CSV</td><td>未适配</td><td>未适配</td><td>未适配</td><td><span class="status status-experimental">实验性适配</span></td>
+    </tr>
+<tr data-family="旧款 A 系列" data-models="A0,A1" data-note="依据共用旧款测量路径接入，具体型号、固件和字段仍需实机确认。设备累计缺失时使用 Mac 积分。" data-guide="troubleshooting">
+      <th scope="row">A0 / A1</th><td>旧款查询 · 曲线与 CSV</td><td>未适配</td><td>未适配</td><td>未适配</td><td><span class="status status-experimental">实验性适配</span></td>
+    </tr></tbody>
+          </table>
+        </div>
+        <p class="section-note">矩阵中的 PD 与 E-Marker 指设备操作；历史 K2PD 重放与本地虚拟 E-Marker 编辑可离线使用。截图展示应用界面，不代表对应型号已通过实机验证。</p>
+      </section>
 
-  <dialog class="lightbox" aria-labelledby="lightbox-caption"><div class="lightbox-toolbar"><p id="lightbox-caption"></p><button class="lightbox-close" type="button" aria-label="关闭放大图片">关闭 <span aria-hidden="true">×</span></button></div><div class="lightbox-content"><img alt=""></div></dialog>
+      <div class="compat-notes">
+        <article class="compat-note"><h3>新版共同测量</h3><p>K2、C4 / C4L / C5、U3 / U3L / U3LP、A2 / A2L / A2C 接入共同测量路径。A2 固件需 2.1 起、A2L 需 1.6 起；A2 系列仅有一组设备容量。U3L Pro 按 U3LP 识别。</p></article>
+        <article class="compat-note"><h3>旧款查询测量</h3><p>U2 / U2P / X 使用旧款查询；C0 / C0s / C1 / C3、A0 / A1 为实验性适配。实时帧缺少设备 Ah / Wh、运行时间与组号，软件积分和 CSV 仍可使用。</p></article>
+        <article class="compat-note"><h3>表盘与维护要求</h3><p>K2 的表盘、开机图与维护操作须确认 K2 DFU 身份，线阻读取限定固件 5.5–5.8。C4 / C4L / C5 的表盘要求固件 3.0 起，使用独立 DFU 路径；固件和虚拟 E-Marker 设备操作仍限 K2。</p></article>
+        <article class="compat-note"><h3>尚未覆盖的型号</h3><p>A2Q 不具备电脑联机功能。CC1、C2、C0Q / C0+、U3SE / MFI、C5X / C5L 未计入适配型号。扫描到 USB 接口，不等于已确认具体型号或协议。</p></article>
+      </div>
+
+      <section class="compat-diagnostics" aria-labelledby="diagnostics-title">
+        <div class="showcase"><div class="showcase-copy"><p class="section-kicker">连接时，再核对一次</p><h2 id="diagnostics-title">认清接口，<br>再开始测量。</h2><p>使用支持数据传输的 USB 线连接电脑 HID 接口，在「设备」页核对真实 USB 名称、VID / PID 和识别结果。</p><p class="notice"><strong>已连接 ≠ 已收到有效测量。</strong><br>没有读数时，先查看连接诊断中的输入计数与最近报告，再按指南排查。</p><a class="text-link" href="guide.html#connect">查看连接步骤 <span aria-hidden="true">↗</span></a></div>
+    <figure class="screenshot ">
+      <a class="image-link" href="assets/device.png" data-preview="assets/device.png" data-caption="设备识别与连接诊断" aria-label="放大查看：设备识别与连接诊断">
+        <img src="assets/device.png" alt="设备页面中的 USB 名称、VID PID、识别结果与连接诊断" width="2774" height="2202" loading="lazy" decoding="async">
+        <span class="image-zoom" aria-hidden="true">↗</span>
+      </a>
+      <figcaption><span>先核对识别结果，再连接。</span><span class="zoom-label" aria-hidden="true">点击放大 ↗</span></figcaption>
+    </figure></div>
+      </section>
+    </div>
+
+  </main>
+
+  <footer class="footer shell">
+    <div class="footer-top">
+      <a class="brand" href="index.html"><img src="assets/app-icon.png" alt="" width="32" height="32"><span>维简 <strong>Studio</strong></span></a>
+      <nav aria-label="页脚导航"><a href="https://github.com/Andyshenjx/WITRN-Studio-Mac">GitHub ↗</a><a href="https://github.com/Andyshenjx/WITRN-Studio-Mac/issues">问题反馈 ↗</a><a href="index.html#support">支持开发</a><a href="https://github.com/Andyshenjx/WITRN-Studio-Mac/blob/main/LICENSE">开源协议</a><a href="https://github.com/Andyshenjx/WITRN-Studio-Mac/blob/main/THIRD_PARTY_NOTICES.md">第三方声明</a></nav>
+    </div>
+    <p>Made by <a href="https://github.com/Andyshenjx">Andyshenjx</a> <span aria-hidden="true">·</span> 代码采用 LGPL-3.0-or-later，品牌资源不属于该授权范围。</p>
+    <p class="legal">独立第三方项目，与 WITRN / 维简官方无关联，未获其授权、认可或背书。相关商标与标识归各自权利人所有。软件按「原样」提供，功能和兼容性以具体版本说明为准。</p>
+  </footer>
+  <dialog class="lightbox" aria-labelledby="lightbox-caption">
+    <div class="lightbox-toolbar"><p id="lightbox-caption">应用截图</p><div class="lightbox-actions"><a class="lightbox-original" href="assets/app-overview.png" target="_blank" rel="noopener noreferrer">查看原图 ↗</a><button class="lightbox-close" type="button" aria-label="关闭放大图片">关闭 <span aria-hidden="true">×</span></button></div></div>
+    <div class="lightbox-content"><img alt=""></div>
+  </dialog>
 </body>
 </html>

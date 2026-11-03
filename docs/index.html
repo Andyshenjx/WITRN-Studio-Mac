@@ -1,115 +1,189 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <!-- Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDCEBKFG3F"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-EDCEBKFG3F');
-  </script>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#faf9f6">
+  <meta name="theme-color" content="#f7f8f3">
   <title>维简 Studio · WITRN USB 功率表原生 Mac 上位机</title>
-  <meta name="description" content="维简 Studio 是 WITRN 多型号 USB 功率表的第三方原生 macOS 上位机。查看电压、电流和功率曲线，记录与分析 CSV，探索 K2 的 USB PD 抓包、表盘布局和背景编辑。">
+  <meta name="description" content="在 Mac 上观察 WITRN USB 功率表曲线，保存和分析 CSV，查看 K2 PD 抓包、线阻与表盘编辑。先确认型号兼容性，再下载上手。">
   <link rel="canonical" href="https://andyshenjx.github.io/WITRN-Studio-Mac/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_CN">
   <meta property="og:site_name" content="维简 Studio">
-  <meta property="og:title" content="维简 Studio · 在 Mac 上，读懂每一瓦。">
-  <meta property="og:description" content="WITRN USB 功率表的原生 Mac 上位机。测量、记录、分析，以及属于你的个性表盘。">
+  <meta property="og:title" content="维简 Studio · WITRN USB 功率表原生 Mac 上位机">
+  <meta property="og:description" content="在 Mac 上观察 WITRN USB 功率表曲线，保存和分析 CSV，查看 K2 PD 抓包、线阻与表盘编辑。先确认型号兼容性，再下载上手。">
   <meta property="og:url" content="https://andyshenjx.github.io/WITRN-Studio-Mac/">
   <meta property="og:image" content="https://andyshenjx.github.io/WITRN-Studio-Mac/assets/app-overview.png">
   <meta property="og:image:alt" content="维简 Studio 的电压、电流与功率曲线界面">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" href="assets/app-icon.png">
   <link rel="apple-touch-icon" href="assets/app-icon.png">
-  <link rel="stylesheet" href="styles.css">
-  <script src="site.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=3.3.0-layout-20261103">
+  <script src="site.js?v=3.3.0-layout-20261103" defer></script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDCEBKFG3F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EDCEBKFG3F');
+  </script>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "维简 Studio",
-    "alternateName": "WITRN Studio Mac",
-    "operatingSystem": "macOS 14+",
-    "applicationCategory": "UtilitiesApplication",
-    "url": "https://andyshenjx.github.io/WITRN-Studio-Mac/",
-    "downloadUrl": "https://github.com/Andyshenjx/WITRN-Studio-Mac/releases",
-    "description": "WITRN USB 功率表的第三方原生 macOS 上位机，提供测量曲线、CSV 记录与分析、K2 USB PD 抓包及个性化编辑。",
-    "author": {"@type": "Person", "name": "Andyshenjx", "url": "https://github.com/Andyshenjx"},
-    "license": "https://www.gnu.org/licenses/lgpl-3.0.html"
-  }
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "维简 Studio",
+  "alternateName": "WITRN Studio Mac",
+  "operatingSystem": "macOS 14+",
+  "applicationCategory": "UtilitiesApplication",
+  "url": "https://andyshenjx.github.io/WITRN-Studio-Mac/",
+  "downloadUrl": "https://github.com/Andyshenjx/WITRN-Studio-Mac/releases",
+  "description": "WITRN USB 功率表的第三方原生 macOS 上位机，提供测量曲线、CSV 记录与分析、K2 USB PD 抓包及个性化编辑。",
+  "author": {
+    "@type": "Person",
+    "name": "Andyshenjx",
+    "url": "https://github.com/Andyshenjx"
+  },
+  "license": "https://www.gnu.org/licenses/lgpl-3.0.html"
+}
   </script>
 </head>
 <body>
+
   <a class="skip-link" href="#main">跳到正文</a>
   <header class="site-header">
     <nav class="nav shell" aria-label="主导航">
-      <a class="brand" href="index.html" aria-label="维简 Studio 首页"><img src="assets/app-icon.png" alt="" width="40" height="40"><span>维简 <strong>Studio</strong></span></a>
-      <div class="nav-links"><a href="features.html">功能全览</a><a href="features.html#personalize">个性化</a><a href="compatibility.html">兼容性</a><a href="guide.html">使用指南</a><a href="index.html#support">支持开发 <span aria-hidden="true">↗</span></a></div>
-      <a class="button button-small" href="index.html#download">下载 Mac 版 <span aria-hidden="true">↓</span></a>
+      <a class="brand" href="index.html" aria-label="维简 Studio 首页" aria-current="page"><img src="assets/app-icon.png" alt="" width="36" height="36"><span>维简 <strong>Studio</strong></span></a>
+      <div class="nav-links"><a href="features.html">功能全览</a><a href="compatibility.html">设备兼容性</a><a href="guide.html">使用指南</a></div>
+      <div class="nav-actions">
+        <a class="button button-small" href="index.html#download">下载 Mac 版 <span aria-hidden="true">↓</span></a>
+        <details class="mobile-menu">
+          <summary aria-label="网站导航"><span class="menu-lines" aria-hidden="true"></span><span class="visually-hidden">网站导航</span></summary>
+          <div class="mobile-menu-panel"><a href="features.html">功能全览</a><a href="compatibility.html">设备兼容性</a><a href="guide.html">使用指南</a><a href="index.html#support">支持开发</a><a href="https://github.com/Andyshenjx/WITRN-Studio-Mac">GitHub <span aria-hidden="true">↗</span></a></div>
+        </details>
+      </div>
     </nav>
   </header>
-
   <main id="main">
+
     <section class="hero shell" aria-labelledby="hero-title">
-      <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span> 为 WITRN 功率表，带来原生 Mac 体验</div>
-      <h1 id="hero-title">在 Mac 上，<br><span>读懂每一瓦。</span></h1>
-      <p class="hero-description">从充电曲线到 USB PD 报文，从数据记录到个性表盘。<br class="desktop-break">维简 Studio，把功率表的更多可能带到你的桌面。</p>
-      <div class="hero-actions"><a class="button" href="index.html#download"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5"/></svg>下载 Mac 版</a><a class="text-link" href="https://github.com/Andyshenjx/WITRN-Studio-Mac">在 GitHub 查看 <span aria-hidden="true">↗</span></a></div>
-      <p class="hero-meta">macOS 14+ <span>·</span> Apple Silicon <span>·</span> LGPL 开源</p>
-      <figure class="hero-figure">
-        <div class="screenshot-stage"><button class="image-button hero-image" type="button" data-preview="assets/app-overview.png" data-caption="维简 Studio · 曲线与记录分析" aria-label="放大查看维简 Studio 曲线与记录分析截图"><img src="assets/app-overview.png" alt="维简 Studio 的 Mac 界面，展示电压、电流和功率曲线、区间统计及资源侧栏" width="2774" height="2202" fetchpriority="high"><span class="image-zoom" aria-hidden="true">↗</span></button></div>
-        <figcaption><span><i class="tiny-dot" aria-hidden="true"></i>真实应用界面</span><span>每一次变化，都有迹可循 <span aria-hidden="true">↗</span></span></figcaption>
-      </figure>
-    </section>
-
-    <div class="device-ribbon shell"><p>一个工作空间，连接更多 WITRN。</p><div><strong>19 <small>款测量型号</small></strong><span class="ribbon-divider"></span><strong>2 <small>代测量协议</small></strong><span class="ribbon-divider"></span><strong>3.3.0 <small>版本介绍</small></strong></div><a href="compatibility.html">查看完整支持范围 ↗</a></div>
-<section class="features section shell" id="features" aria-labelledby="features-title">
-      <div class="section-heading"><div><span class="section-kicker">01 / 测量与洞察</span><h2 id="features-title">看到曲线，<br>也看清细节。</h2></div><p>实时观察，持续记录，再回到值得关注的那一段。<br>让一次测量，成为可以反复分析的数据。</p></div>
-      <div class="feature-grid">
-        <article class="feature-card"><span class="feature-number">01</span><svg class="feature-icon green" viewBox="0 0 48 48" aria-hidden="true"><path d="M5 36h38M7 30l9-10 7 6 9-17 9 9"/><circle cx="16" cy="20" r="2"/><circle cx="32" cy="9" r="2"/></svg><h3>变化，一眼可见。</h3><p>电压、电流、功率多指标叠加，独立刻度与光标读数。通过缩放、平移和全程导航，找到曲线里的关键瞬间。</p><div class="metric-tags"><span class="green">V 电压</span><span class="blue">A 电流</span><span class="orange">W 功率</span></div></article>
-        <article class="feature-card"><span class="feature-number">02</span><svg class="feature-icon blue" viewBox="0 0 48 48" aria-hidden="true"><path d="M12 5h16l9 9v29H12zM28 5v10h9M19 24h11M19 31h11"/></svg><h3>记录，留待细看。</h3><p>持续保存 CSV，支持暂停、继续与记录间隔设置。导入已有记录，查看全程或选定区间的容量、能量与统计数据。</p><div class="metric-tags"><span>CSV</span><span>mAh / Ah</span><span>Wh</span></div></article>
-        <article class="feature-card"><span class="feature-number">03</span><svg class="feature-icon orange" viewBox="0 0 48 48" aria-hidden="true"><path d="M12 9v12h24V9M24 21v19M7 9h10M31 9h10M19 40h10"/><circle cx="12" cy="7" r="3"/><rect x="33" y="4" width="6" height="6"/></svg><h3>协议，也能读懂。</h3><p>在 K2 上捕获 USB PD 报文，筛选、搜索并查看原始十六进制。支持常见 PDO / RDO、PPS 等解码与 K2PD 文件重放。</p><div class="metric-tags"><span>USB PD</span><span>PPS</span><span>K2PD</span></div></article>
-      </div><p class="section-note"><a class="text-link" href="features.html">查看线阻、E-Marker 与全部功能截图 ↗</a></p>
-    </section>
-
-    <section class="personalize section" id="personalize" aria-labelledby="personalize-title">
-      <div class="shell">
-        <div class="section-heading"><div><span class="section-kicker">02 / 让表盘更像你</span><h2 id="personalize-title">数据很严谨。<br><span class="orange">表盘可以有个性。</span></h2></div><p>一张喜欢的图片，一套顺手的布局。<br>在 Mac 上编辑，再把你的想法带到功率表屏幕。</p></div>
-        <article class="showcase-row">
-          <div class="showcase-copy"><span class="pill">表盘背景</span><h3>把喜欢的画面，<br>放进方寸之间。</h3><p>导入 BMP、PNG 或 JPEG，用裁剪、缩放和位置调整完成构图。支持 K2 的 240 × 240 与 C4/C4L/C5 的 320 × 172 背景。图片保存为官方交换用 BMP，并可归档到资源库。</p><ul class="check-list"><li>裁剪填满、完整保留与拉伸适配</li><li>缩放与水平、垂直位置调整</li><li>表盘背景与开机图资源管理</li></ul></div>
-          <figure class="editor-figure background-figure"><button class="image-button" type="button" data-preview="assets/dial-background.png" data-caption="表盘背景编辑 · 图片适配与构图" aria-label="放大查看表盘背景编辑截图"><img src="assets/dial-background.png" alt="表盘背景编辑器，可设置图片适配方式、缩放与水平垂直位置" width="2774" height="2202" loading="lazy"><span class="image-zoom" aria-hidden="true">↗</span></button><figcaption>你的图片。你的构图。你的表盘。</figcaption></figure>
-        </article>
-        <article class="showcase-row reverse">
-          <div class="showcase-copy"><span class="pill">表盘布局</span><h3>每一项读数，<br>都在合适的位置。</h3><p>选择要显示的元素，调整坐标、颜色、字体与位数。用画布预览排版，支持拖动定位、方向键微调、撤销与重做。</p><ul class="check-list"><li>K2 17 项 / C4 系列 12 项布局元素</li><li>背景与读数一起预览</li><li>官方 .k2pic / .c4cfg 与 BMP，支持 ZIP 资源包</li></ul></div>
-          <figure class="editor-figure layout-figure"><button class="image-button" type="button" data-preview="assets/dial-layout.png" data-caption="表盘布局编辑 · 元素定位与样式设置" aria-label="放大查看表盘布局编辑截图"><img src="assets/dial-layout.png" alt="表盘布局编辑器，展示读数元素的位置、颜色、字体与位数设置以及表盘预览" width="2774" height="2202" loading="lazy"><span class="image-zoom" aria-hidden="true">↗</span></button><figcaption>从布局到细节，让读数按你的习惯呈现。</figcaption></figure>
-        </article>
-        <p class="section-note">截图用于展示应用界面。表盘写入适配 K2、C4/C4L/C5；开机图、固件与 E-Marker 设备操作限 K2。新增型号与维护路径尚待实机验证，具体能力以下载版本说明为准。</p>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>WITRN USB 功率表 · 原生 macOS 上位机</p>
+        <h1 id="hero-title">在 Mac 上，<br><span class="accent">读懂每一瓦。</span></h1>
+        <p class="hero-description">观察充电曲线，保存测量记录，回看 USB PD 协商。再为你的功率表，设计一张自己的表盘。</p>
+        <div class="hero-actions"><a class="button" href="#download">下载 Mac 版 <span aria-hidden="true">↓</span></a><a class="text-link" href="compatibility.html">确认设备兼容性 <span aria-hidden="true">↗</span></a></div>
+        <p class="hero-meta"><span>macOS 14+</span><span>Apple Silicon</span><span>LGPL 开源</span></p>
+      </div>
+      <div class="hero-visual">
+        
+    <figure class="screenshot ">
+      <a class="image-link" href="assets/app-overview.png" data-preview="assets/app-overview.png" data-caption="维简 Studio · 曲线与记录分析" aria-label="放大查看：维简 Studio · 曲线与记录分析">
+        <img src="assets/app-overview.png" alt="维简 Studio 的实际界面：左侧工作空间、中间电压电流功率曲线、右侧读数与区间统计" width="2774" height="2202" fetchpriority="high" decoding="async">
+        <span class="image-zoom" aria-hidden="true">↗</span>
+      </a>
+      <figcaption><span>曲线、读数与统计，一个工作空间。</span><span class="zoom-label" aria-hidden="true">点击放大 ↗</span></figcaption>
+    </figure>
+        <div class="native-strip"><span>原生 SwiftUI</span><span>深浅外观</span><span>本地数据文件</span></div>
       </div>
     </section>
 
-    <section class="native-section section shell" aria-labelledby="native-title"><div class="native-mark" aria-hidden="true">⌘</div><div><span class="section-kicker">熟悉的 Mac，熟悉的操作</span><h2 id="native-title">为你的桌面而生。</h2><p>SwiftUI 原生界面，深浅外观与主题色。<br>快捷键、拖放导入、自选保存目录，让工具融入你的工作习惯。</p></div><div class="native-notes"><span>原生 SwiftUI</span><span>深浅外观</span><span>键盘与拖放</span><span>本地数据文件</span></div></section>
+    <nav class="start-path shell" aria-label="首次使用路径">
+      <p><strong>第一次使用？</strong>从你的设备开始。</p>
+      <div class="path-links">
+        <a href="compatibility.html"><span><small>01</small>确认型号</span><span aria-hidden="true">↗</span></a>
+        <a href="#download"><span><small>02</small>下载应用</span><span aria-hidden="true">↓</span></a>
+        <a href="guide.html#connect"><span><small>03</small>连接并记录</span><span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
 
-    <section class="compatibility section shell" id="compatibility" aria-labelledby="compatibility-title"><div class="section-heading"><div><span class="section-kicker">03 / 开始之前</span><h2 id="compatibility-title">选好设备，<br>连接你的 Mac。</h2></div><p>不同型号，支持范围有所不同。<br>请使用支持数据传输的 USB 线连接电脑 HID 接口。</p></div>
-      <div class="table-wrap"><table><caption class="visually-hidden">WITRN 设备能力矩阵</caption><thead><tr><th scope="col">设备型号</th><th scope="col">测量 / CSV</th><th scope="col">PD 抓包</th><th scope="col">个性化写入</th><th scope="col">固件 / E-Marker</th></tr></thead><tbody><tr><th scope="row">K2</th><td>已有测量适配</td><td>支持</td><td>表盘 / 开机图</td><td>K2 固件 / E-Marker</td></tr><tr><th scope="row">C5 / C4 / C4L</th><td>共同协议适配，待验证</td><td>未适配</td><td>表盘背景 / 布局</td><td>未适配</td></tr><tr><th scope="row">U3 / U3L / U3LP</th><td>共同协议适配，待验证</td><td>未适配</td><td>未适配</td><td>未适配</td></tr><tr><th scope="row">A2 / A2L / A2C</th><td>共同协议适配，待验证</td><td>未适配</td><td>未适配</td><td>未适配</td></tr><tr><th scope="row">U2 / U2P / X</th><td>旧款查询适配，待验证</td><td>未适配</td><td>未适配</td><td>未适配</td></tr><tr><th scope="row">C0 / C0s / C1 / C3</th><td>实验性测量适配</td><td>未适配</td><td>未适配</td><td>未适配</td></tr><tr><th scope="row">A0 / A1</th><td>实验性测量适配</td><td>未适配</td><td>未适配</td><td>未适配</td></tr></tbody></table></div>
-      <p class="section-note">新增型号尚待逐一实机验证；旧款 C、A 系列为实验性适配。<a href="compatibility.html">查看固件要求与功能边界 ↗</a></p><div class="setup-steps"><article><span>1</span><h3>下载并安装</h3><p>从 GitHub Releases 下载，将解压后的 App 放入「应用程序」。</p></article><article><span>2</span><h3>通过 HID 接口连接</h3><p>使用 USB 数据线连接功率表，在应用「设备」页选择并连接。</p></article><article><span>3</span><h3>开始观察与记录</h3><p>查看测量曲线、创建 CSV 记录；K2 抓包需在设备端开启 PD 联机开关。</p></article></div>
+    <section class="section shell" id="features" aria-labelledby="features-title">
+      <div class="section-heading"><div><p class="section-kicker">01 / 从观察到分析</p><h2 id="features-title">看到变化，<br>也留下细节。</h2></div><p>先看实时表现，再保存完整过程。<br>值得关注的那一段，随时回来细看。</p></div>
+      <div class="workflow-grid">
+        <article class="workflow-card">
+          <div class="workflow-top"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M5 5v29h31M9 26l7-11 7 6 10-13"/><circle cx="16" cy="15" r="2"/></svg><span>01 / LIVE</span></div>
+          <h3>沿着曲线，找变化。</h3><p>电压、电流、功率叠加显示，配合独立刻度、光标和全程导航，定位一次波动或一段充电过程。</p>
+          <div class="tags"><span class="tag">实时读数</span><span class="tag">缩放与平移</span><span class="tag">区间统计</span></div>
+          <a class="text-link" href="features.html#instrument">查看测量界面 <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="workflow-card">
+          <div class="workflow-top"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M10 4h14l7 7v25H10zM24 4v8h7M16 20h9M16 26h9"/></svg><span>02 / RECORD</span></div>
+          <h3>测量之后，还能细看。</h3><p>持续保存 CSV，支持暂停与继续。导入历史记录，重新查看曲线，比较全程和选定区间的容量与能量。</p>
+          <div class="tags"><span class="tag">CSV 文件</span><span class="tag">mAh / Ah</span><span class="tag">Wh</span></div>
+          <a class="text-link" href="features.html#record-analysis">查看记录分析 <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="workflow-card">
+          <div class="workflow-top"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M10 7v12h20V7M20 19v15M15 34h10"/><circle cx="10" cy="5" r="3"/><rect x="27" y="2" width="6" height="6"/></svg><span>03 / USB PD</span></div>
+          <h3>把协议，读得更清楚。</h3><p>在 K2 上捕获和筛选 PD 报文，查看 PDO / RDO、PPS 解码及原始十六进制；保存 K2PD，供之后离线重放。</p>
+          <div class="tags"><span class="tag tag-accent">K2 专属抓包</span><span class="tag">PPS</span><span class="tag">离线重放</span></div>
+          <a class="text-link" href="features.html#pd-capture">查看协议工具 <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+      <div class="feature-footnote"><p><strong>想继续深入？</strong> K2 还提供线阻结果记录与虚拟 E-Marker 配置。</p><a class="text-link" href="features.html">浏览全部功能与截图 <span aria-hidden="true">↗</span></a></div>
     </section>
 
-    <section class="download-section shell" id="download" aria-labelledby="download-title"><div class="download-copy"><img src="assets/app-icon.png" alt="" width="80" height="80" loading="lazy"><span class="section-kicker">维简 STUDIO FOR MAC</span><h2 id="download-title">下一次测量，<br>从这里开始。</h2><p>在大屏幕上，重新认识你的 USB 功率表。</p><a class="button" href="https://github.com/Andyshenjx/WITRN-Studio-Mac/releases">前往 GitHub 下载 <span aria-hidden="true">↗</span></a><div class="download-meta">macOS 14 或更新版本 · Apple Silicon Mac</div></div><aside class="release-note"><span class="release-label">下载说明</span><p>下载文件与版本说明以 GitHub Releases 为准。当前发行包面向 M 系列 Mac；Intel Mac 请参阅源码构建说明。</p><p>如系统阻止打开，请先确认下载来源，再按系统提示在「系统设置 → 隐私与安全性」中处理。</p><a class="text-link" href="guide.html">阅读使用指南 <span aria-hidden="true">↗</span></a></aside></section>
+    <section class="personalize-section section" id="personalize" aria-labelledby="personalize-title">
+      <div class="shell">
+        <div class="showcase">
+          <div class="showcase-copy"><p class="section-kicker">02 / 属于你的表盘</p><h2 id="personalize-title">数据很严谨。<br><span class="accent">表盘可以有个性。</span></h2><p>导入喜欢的图片，调整构图，再把电压、电流和功率放到顺手的位置。从背景到布局，都在 Mac 上完成。</p>
+            <ul class="check-list"><li>图片裁剪、缩放与位置调整</li><li>布局元素拖动定位，支持撤销与重做</li><li>官方 .k2pic / .c4cfg、BMP 与 ZIP 资源包</li></ul>
+            <a class="text-link" href="features.html#personalize">探索表盘编辑 <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="showcase-media">
+    <figure class="screenshot screenshot-warm">
+      <a class="image-link" href="assets/dial-layout.png" data-preview="assets/dial-layout.png" data-caption="表盘布局编辑" aria-label="放大查看：表盘布局编辑">
+        <img src="assets/dial-layout.png" alt="表盘布局编辑器，显示元素列表、设备表盘预览与坐标、颜色等设置" width="2774" height="2202" loading="lazy" decoding="async">
+        <span class="image-zoom" aria-hidden="true">↗</span>
+      </a>
+      <figcaption><span>把每一项读数，放在合适的位置。</span><span class="zoom-label" aria-hidden="true">点击放大 ↗</span></figcaption>
+    </figure><div class="media-links"><a href="features.html#background">背景与构图 ↗</a><a href="features.html#dial-layout">布局与元素 ↗</a><a href="features.html#startup-image">K2 开机图 ↗</a></div></div>
+        </div>
+        <p class="section-note">表盘适配 K2、C4 / C4L / C5；开机图限 K2。预览使用替代字体，新增维护路径仍待实机验证。</p>
+      </div>
+    </section>
 
-    <section class="faq-section section shell" aria-labelledby="faq-title"><div><span class="section-kicker">想了解更多？</span><h2 id="faq-title">几个常见问题。</h2><a class="text-link" href="https://github.com/Andyshenjx/WITRN-Studio-Mac/issues">在 GitHub 反馈问题 <span aria-hidden="true">↗</span></a></div><div class="faq-list"><details><summary>这是 WITRN 官方软件吗？</summary><p>这是 Andyshenjx 独立开发的第三方工具，与 WITRN / 维简官方无关联，未获官方授权或背书。相关名称、商标和标识归各自权利人所有。</p></details><details><summary>可以用它修改设备内部设置吗？</summary><p>应用提供测量、记录、分析及已适配的 K2 维护功能，不提供设备内部设置或设备内部历史记录读取。旧款 U2 世代接口会发送固定测量查询；K2 线阻使用限定的只读请求。不提供远程诱骗控制。</p></details><details><summary>可以编辑表盘、更新固件吗？</summary><p>K2 提供表盘、开机图与独立 DFU 维护；C4/C4L/C5 支持共用表盘背景和布局。其他型号尚未适配维护写入。固件升级和个性化写入未经实机验证，使用前请阅读版本说明及项目文档。</p></details><details><summary>PD 解码结果可以直接作为最终结论吗？</summary><p>请结合原始报文与实际设备判断。程序保留原始十六进制，CRC 未校验；缺少上下文时不会猜测 RDO 物理量。测量与协议结果仍需结合实际设备核对。</p></details><details><summary>在哪里获取帮助或提交反馈？</summary><p>先查看<a href="guide.html">使用指南</a>。如果问题仍然存在，请在 <a href="https://github.com/Andyshenjx/WITRN-Studio-Mac/issues">GitHub Issues</a> 提供 macOS 版本、Mac 芯片、功率表型号、固件版本与复现步骤。</p></details></div></section>
+    <section class="section shell" id="compatibility" aria-labelledby="compatibility-title">
+      <div class="section-heading"><div><p class="section-kicker">03 / 先确认，再开始</p><h2 id="compatibility-title">找到你的型号，<br>看清可用功能。</h2></div><p>源码包含 19 款型号的测量适配路径。<br>PD、表盘和维护功能按型号分别开放。</p></div>
+      <div class="device-summary">
+        <article><span class="tag tag-accent">K2</span><h3>测量与进阶工具</h3><p>曲线、CSV、PD 抓包，以及限定固件的线阻读取；表盘、开机图和维护入口另有设备要求。</p><a href="compatibility.html?model=K2">查看 K2 范围 <span aria-hidden="true">↗</span></a></article>
+        <article><span class="tag">C4 / C4L / C5</span><h3>测量与表盘</h3><p>共同测量协议；表盘背景与布局采用独立路径，要求固件 3.0 起，并确认设备 DFU 身份。</p><a href="compatibility.html?model=C5">查看 C4 / C5 范围 <span aria-hidden="true">↗</span></a></article>
+        <article><span class="tag">U / A / 其他 C 系列</span><h3>测量与 CSV</h3><p>U3、A2、U2 等系列接入曲线与记录；部分旧款采用实验性适配，功能和固件需逐一核对。</p><a href="compatibility.html#matrix">查看全部 19 款型号 <span aria-hidden="true">↗</span></a></article>
+      </div>
+      <p class="section-note">型号数量表示源码适配范围。新增型号和维护功能尚待实机验证，下载包是否包含相应能力，请核对发行版说明。</p>
+    </section>
 
-    <section class="support-section shell" id="support" aria-labelledby="support-title"><div class="support-copy"><span class="section-kicker">一个独立开发的项目</span><h2 id="support-title">觉得好用，<br>请 Andy 喝杯咖啡。</h2><p>如果维简 Studio 帮到了你，欢迎自愿赞赏，支持后续维护。<br>每一份支持，都让这个小工具继续向前。</p><p class="support-small">赞赏不影响任何功能。反馈问题、分享使用体验，也同样有帮助。</p><a class="text-link" href="https://github.com/Andyshenjx/WITRN-Studio-Mac">关注项目进展 <span aria-hidden="true">↗</span></a></div><figure class="support-code"><button class="image-button" type="button" data-preview="assets/andy-support.jpg" data-caption="Andy 的赞赏码 · 自愿赞赏，感谢支持" aria-label="放大查看 Andy 的微信赞赏码"><img src="assets/andy-support.jpg" alt="Andy 的微信赞赏码，可使用微信扫码自愿赞赏" width="1152" height="1152" loading="lazy"></button><figcaption>微信扫一扫 · 点击可放大</figcaption></figure></section>
+    <section class="download-section shell" id="download" aria-labelledby="download-title">
+      <div class="download-copy"><div class="download-title"><img src="assets/app-icon.png" alt="" width="50" height="50" loading="lazy"><p class="section-kicker">WITRN STUDIO / FOR MAC</p></div><h2 id="download-title">下一次测量，<br>从这里开始。</h2><p>下载应用，把功率表连接到你的 Mac。</p><a class="button" href="https://github.com/Andyshenjx/WITRN-Studio-Mac/releases">前往 GitHub Releases <span aria-hidden="true">↗</span></a><p class="download-meta">macOS 14 或更新版本 · Apple Silicon Mac</p></div>
+      <div class="download-notes"><h3>下载之前</h3><p>本网站介绍 3.3.0 的功能与适配范围。具体下载文件、版本功能和安装要求，以 Releases 中对应发行版的说明为准。</p><p>Intel Mac 用户请查看项目源码说明。第一次连接，请准备支持数据传输的 USB 线。</p><a class="text-link" href="guide.html#install">阅读安装与上手指南 <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="faq-section section shell" aria-labelledby="faq-title">
+      <div class="faq-intro"><p class="section-kicker">开始前的小问题</p><h2 id="faq-title">想再确认一下？</h2><p>连接、记录与设备操作的详细步骤，都整理在使用指南中。</p><a class="text-link" href="guide.html">打开使用指南 <span aria-hidden="true">↗</span></a></div>
+      <div class="accordion">
+        <details><summary>这是 WITRN 官方软件吗？</summary><p>这是 Andyshenjx 独立开发的第三方工具，与 WITRN / 维简官方无关联，未获官方授权或背书。相关名称、商标与标识归各自权利人所有。</p></details>
+        <details><summary>列表中的型号，所有功能都能用吗？</summary><p>功能按型号分别开放。PD 抓包、线阻、固件与虚拟 E-Marker 设备操作限 K2；C4 / C4L / C5 另有表盘路径。请在<a class="inline-link" href="compatibility.html">兼容性页面</a>选择型号，核对固件要求和适配状态。</p></details>
+        <details><summary>连接后会自动保存测量文件吗？</summary><p>测量 CSV 需要点击「开始记录」。K2 的 PD 抓包默认在连接后独立保存，也可在设置中关闭。CSV 和 K2PD 是两种文件，详见<a class="inline-link" href="guide.html#recording">观察与记录</a>。</p></details>
+        <details><summary>连接后没有数据，应该从哪里排查？</summary><p>先检查数据线和电脑 HID 接口，再在「设备」页重新扫描，查看连接诊断中的输入计数与最近报告。<a class="inline-link" href="guide.html#troubleshooting">按排查步骤检查</a>，仍有问题时可附日志反馈。</p></details>
+      </div>
+    </section>
+
+    <section class="support-section shell" id="support" aria-labelledby="support-title">
+      <div class="support-copy"><p class="section-kicker">让工具继续变好</p><h2 id="support-title">喜欢它，欢迎支持开发。</h2><p>分享使用体验、提交问题，或在 GitHub 留下一颗 Star，都能帮助项目继续完善。你也可以通过赞赏支持这个独立项目。</p><a class="text-link" href="https://github.com/Andyshenjx/WITRN-Studio-Mac">在 GitHub 关注项目 <span aria-hidden="true">↗</span></a><p class="support-small">感谢每一份反馈与支持。</p></div>
+      <figure class="support-code"><a class="image-link" href="assets/andy-support.jpg" data-preview="assets/andy-support.jpg" data-caption="支持 Andyshenjx 的独立开发" aria-label="放大查看赞赏码"><img src="assets/andy-support.jpg" alt="Andyshenjx 的微信赞赏码，点击可放大查看" width="1152" height="1152" loading="lazy" decoding="async"><span class="image-zoom" aria-hidden="true">↗</span></a><figcaption>微信扫一扫 · 点击可放大</figcaption></figure>
+    </section>
+
   </main>
 
-  <footer class="footer shell"><div class="footer-top"><a class="brand" href="index.html"><img src="assets/app-icon.png" alt="" width="32" height="32"><span>维简 <strong>Studio</strong></span></a><div><a href="https://github.com/Andyshenjx/WITRN-Studio-Mac">GitHub <span aria-hidden="true">↗</span></a><a href="guide.html">使用指南</a><a href="https://github.com/Andyshenjx/WITRN-Studio-Mac/blob/main/LICENSE">开源协议</a><a href="https://github.com/Andyshenjx/WITRN-Studio-Mac/blob/main/THIRD_PARTY_NOTICES.md">第三方声明</a></div></div><p>Made by <a href="https://github.com/Andyshenjx">Andyshenjx</a> <span aria-hidden="true">·</span> 代码采用 LGPL-3.0-or-later，品牌资源不属于该授权范围。</p><p class="legal">独立第三方项目，与 WITRN / 维简官方无关联，未获其授权、认可或背书。相关商标与标识归各自权利人所有。软件按「原样」提供；功能和兼容性以具体版本说明为准。</p></footer>
-
-  <dialog class="lightbox" aria-labelledby="lightbox-caption"><div class="lightbox-toolbar"><p id="lightbox-caption"></p><button class="lightbox-close" type="button" aria-label="关闭放大图片">关闭 <span aria-hidden="true">×</span></button></div><div class="lightbox-content"><img alt=""></div></dialog>
+  <footer class="footer shell">
+    <div class="footer-top">
+      <a class="brand" href="index.html"><img src="assets/app-icon.png" alt="" width="32" height="32"><span>维简 <strong>Studio</strong></span></a>
+      <nav aria-label="页脚导航"><a href="https://github.com/Andyshenjx/WITRN-Studio-Mac">GitHub ↗</a><a href="https://github.com/Andyshenjx/WITRN-Studio-Mac/issues">问题反馈 ↗</a><a href="index.html#support">支持开发</a><a href="https://github.com/Andyshenjx/WITRN-Studio-Mac/blob/main/LICENSE">开源协议</a><a href="https://github.com/Andyshenjx/WITRN-Studio-Mac/blob/main/THIRD_PARTY_NOTICES.md">第三方声明</a></nav>
+    </div>
+    <p>Made by <a href="https://github.com/Andyshenjx">Andyshenjx</a> <span aria-hidden="true">·</span> 代码采用 LGPL-3.0-or-later，品牌资源不属于该授权范围。</p>
+    <p class="legal">独立第三方项目，与 WITRN / 维简官方无关联，未获其授权、认可或背书。相关商标与标识归各自权利人所有。软件按「原样」提供，功能和兼容性以具体版本说明为准。</p>
+  </footer>
+  <dialog class="lightbox" aria-labelledby="lightbox-caption">
+    <div class="lightbox-toolbar"><p id="lightbox-caption">应用截图</p><div class="lightbox-actions"><a class="lightbox-original" href="assets/app-overview.png" target="_blank" rel="noopener noreferrer">查看原图 ↗</a><button class="lightbox-close" type="button" aria-label="关闭放大图片">关闭 <span aria-hidden="true">×</span></button></div></div>
+    <div class="lightbox-content"><img alt=""></div>
+  </dialog>
 </body>
 </html>
