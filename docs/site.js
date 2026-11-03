@@ -33,3 +33,6 @@ lightbox?.addEventListener('click', (event) => {
 lightbox?.addEventListener('close', () => {
   document.body.style.overflow = previousOverflow;
 });
+
+const currentPage = location.pathname.split('/').pop() || 'index.html';
+document.querySelectorAll('.nav-links a').forEach(a => { if (a.getAttribute('href') === currentPage) a.setAttribute('aria-current', 'page'); });

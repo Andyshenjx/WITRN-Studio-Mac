@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDCEBKFG3F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-EDCEBKFG3F');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf9f6">
+  <title>从连接，到第一条记录。 · 维简 Studio</title>
+  <meta name="description" content="一根数据线，一个 HID 接口，在 Mac 上开始观察与记录。">
+  <link rel="canonical" href="https://andyshenjx.github.io/WITRN-Studio-Mac/guide.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:site_name" content="维简 Studio">
+  <meta property="og:title" content="从连接，到第一条记录。 · 维简 Studio">
+  <meta property="og:description" content="一根数据线，一个 HID 接口，在 Mac 上开始观察与记录。">
+  <meta property="og:url" content="https://andyshenjx.github.io/WITRN-Studio-Mac/guide.html">
+  <meta property="og:image" content="https://andyshenjx.github.io/WITRN-Studio-Mac/assets/app-overview.png">
+  <meta property="og:image:alt" content="维简 Studio 的电压、电流与功率曲线界面">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
+  <link rel="apple-touch-icon" href="assets/app-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "维简 Studio",
+    "alternateName": "WITRN Studio Mac",
+    "operatingSystem": "macOS 14+",
+    "applicationCategory": "UtilitiesApplication",
+    "url": "https://andyshenjx.github.io/WITRN-Studio-Mac/guide.html",
+    "downloadUrl": "https://github.com/Andyshenjx/WITRN-Studio-Mac/releases",
+    "description": "WITRN USB 功率表的第三方原生 macOS 上位机，提供测量曲线、CSV 记录与分析、K2 USB PD 抓包及个性化编辑。",
+    "author": {"@type": "Person", "name": "Andyshenjx", "url": "https://github.com/Andyshenjx"},
+    "license": "https://www.gnu.org/licenses/lgpl-3.0.html"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <header class="site-header">
+    <nav class="nav shell" aria-label="主导航">
+      <a class="brand" href="index.html" aria-label="维简 Studio 首页"><img src="assets/app-icon.png" alt="" width="40" height="40"><span>维简 <strong>Studio</strong></span></a>
+      <div class="nav-links"><a href="features.html">功能全览</a><a href="features.html#personalize">个性化</a><a href="compatibility.html">兼容性</a><a href="guide.html">使用指南</a><a href="index.html#support">支持开发 <span aria-hidden="true">↗</span></a></div>
+      <a class="button button-small" href="index.html#download">下载 Mac 版 <span aria-hidden="true">↓</span></a>
+    </nav>
+  </header>
+
+  <main id="main"><section class="page-heading shell"><span class="section-kicker">WITRN STUDIO / 3.3.0</span><h1>从连接，到第一条记录。</h1><p>一根数据线，一个 HID 接口，在 Mac 上开始观察与记录。</p></section><section class="shell section guide-body"><h2>01 / 下载与连接</h2><p>从 <a href="https://github.com/Andyshenjx/WITRN-Studio-Mac/releases">GitHub Releases</a> 下载版本，将解压后的 App 放入「应用程序」。网站面向 macOS 14+、Apple Silicon；Intel 用户请查看源码说明。</p><p>使用具备数据传输能力的 USB 线连接功率表的电脑 HID 接口。在「设备」页重新扫描，核对 USB 名称、VID/PID 与识别结果后连接。先在<a href="compatibility.html">兼容性页面</a>确认你的型号范围。</p><h2>02 / 观察与保存</h2><p>进入「仪表」查看实时曲线。时间窗口决定显示范围，刷新率决定数字与图表更新频率，记录间隔决定 CSV 保存频率。点击「开始记录」才会创建测量 CSV；暂停与数据间隙不跨段积分。</p><p>「本次测量」是 Mac 端积分，「设备累计」是功率表上报的计数。旧款缺少设备累计时显示空值，使用本次测量即可。打开历史 CSV，可缩放曲线、选择区间查看容量和能量统计。</p><h2>03 / K2 的协议与线阻</h2><p>PD 抓包需在 K2 设备菜单打开 PD 联机开关。默认连接后自动保存抓包，CSV 与抓包文件独立；也可打开历史 K2PD 文件离线查看。</p><p>线阻功能要求 K2 固件 5.5–5.8，在设备上打开对应 4/8 线页并完成测量，再在 App 读取。软件记录最近设备结果，读取次数不代表独立测量次数。</p><h2>04 / 个性化与设备维护</h2><p>导入图片制作背景，或打开官方 .k2pic / .c4cfg、BMP、ZIP 资源包编辑布局。K2 背景 240 × 240，开机图 235 × 235；C4/C4L/C5 背景 320 × 172。预览字体为替代显示。</p><p>写入前保存资源并按对应型号说明进入 DFU。K2 按住减号键上电，C4/C4L/C5 按住 OK 上电；App 确认设备身份后才提供维护。C4 系列背景与参数分别写入，写入后需在设备表盘页长按 OK 切换。新增维护路径仍待实机确认。</p><h2>05 / 没有数据时</h2><p>检查数据线与 HID 接口，关闭其他占用设备的软件，允许 macOS USB 配件连接，再重新扫描。已连接不等于已收到有效测量；展开连接诊断检查输入计数与最近报告。</p><p>在「设备 → 原始 HID 试抓取」保存日志，添加设备屏幕读数及操作标记，停止后导出完整 JSONL。旧款连接保留正常测量查询，日志功能不额外发送命令。反馈时附型号、固件、macOS 版本与日志，并检查序列号等个人信息。</p><a class="button" href="https://github.com/Andyshenjx/WITRN-Studio-Mac/issues">提交问题 ↗</a></section></main>  <footer class="footer shell"><div class="footer-top"><a class="brand" href="index.html"><img src="assets/app-icon.png" alt="" width="32" height="32"><span>维简 <strong>Studio</strong></span></a><div><a href="https://github.com/Andyshenjx/WITRN-Studio-Mac">GitHub <span aria-hidden="true">↗</span></a><a href="guide.html">使用指南</a><a href="https://github.com/Andyshenjx/WITRN-Studio-Mac/blob/main/LICENSE">开源协议</a><a href="https://github.com/Andyshenjx/WITRN-Studio-Mac/blob/main/THIRD_PARTY_NOTICES.md">第三方声明</a></div></div><p>Made by <a href="https://github.com/Andyshenjx">Andyshenjx</a> <span aria-hidden="true">·</span> 代码采用 LGPL-3.0-or-later，品牌资源不属于该授权范围。</p><p class="legal">独立第三方项目，与 WITRN / 维简官方无关联，未获其授权、认可或背书。相关商标与标识归各自权利人所有。软件按「原样」提供；功能和兼容性以具体版本说明为准。</p></footer>
+
+  <dialog class="lightbox" aria-labelledby="lightbox-caption"><div class="lightbox-toolbar"><p id="lightbox-caption"></p><button class="lightbox-close" type="button" aria-label="关闭放大图片">关闭 <span aria-hidden="true">×</span></button></div><div class="lightbox-content"><img alt=""></div></dialog>
+</body>
+</html>
